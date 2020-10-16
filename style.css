@@ -1,0 +1,1560 @@
+/* FONTS  */
+@font-face {
+    font-family: 'ZonaPro';
+    src: url('fonts/ZonaPro-Bold.otf'),
+         url('fonts/ZonaPro-ExtraLight.otf');
+  }
+
+@font-face {
+    font-family: 'BrittanySignature';
+    src: url('fonts/BrittanySignature.otf');
+}
+/* -------------------------------------------- */
+
+/* BASICS  */
+body{
+    background: url(img/body.jpg);
+    background-repeat: repeat-y;
+    background-size: initial;
+    overflow-x: hidden !important;
+}
+
+.btn {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+h1{
+    font-family: 'ZonaPro';
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+h2{
+    font-family: 'ZonaPro';
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #aa7d4b;
+}
+
+h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    color: #aa7d4b;
+}
+
+h4 {
+    font-family: 'ZonaPro';
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    color: #151515;
+}
+
+.exploreMoreBtn {
+    border-radius: 0;
+    font-family: 'ZonaPro';
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    bottom: 20px; 
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.exploreMoreBtn:hover {
+    text-decoration: none;
+    color: #aa7d4b;
+}
+
+.bookBtn {
+    border-radius: 0;
+    font-family: 'ZonaPro';
+    font-size: 20px;
+    padding: 15px 50px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    background: #aa7d4b;
+    transition: all 0.5s ease;
+}
+
+.bookBtn:hover {
+    color: #745939;
+    border: 1px solid #ccb193;
+    background: none;
+    transition: all 0.8s ease;
+}
+
+.Pattern {
+    background: url("img/pattern.png") repeat-x center top;
+    height: 70px;
+    margin-top: -40px;
+}
+/* -------------------------------------- */
+
+/* RESPONSIVE BASICS  */
+@media (max-width: 1199px) and (min-width: 992px){
+    h1 {
+        font-size: 38px;
+    }
+    h2{
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 22px;
+    }
+    .exploreMoreBtn, .bookBtn {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    h1 {
+        font-size: 36px;
+    }
+    h2{
+        font-size: 34px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 20px;
+    } 
+}
+
+@media (max-width: 767px){
+    h1 {
+        font-size: 34px;
+    }
+    h2{
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+    p {
+        font-size: 19px;
+    }
+    .exploreMoreBtn, .bookBtn {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 575px){
+    h1 {
+        font-size: 32px;
+    }
+    h2{
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px){
+    h1 {
+        font-size: 30px;
+    }
+    h2{
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px){
+    h1 {
+        font-size: 28px;
+    }
+    h2{
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 20px;
+    }  
+}
+/* ----------------------------------  */
+
+/* HEADER  */
+.header{
+    background:  #b58f6d;
+    padding: 0px 100px;
+}
+
+.header p{
+    font-weight: 700;
+    margin: 0px;
+    padding: 5px 0;
+    font-family: 'ZonaPro';
+    font-size: 18px;
+    color: #fff;
+    transition: ease .5s;
+    cursor: pointer;
+}
+
+.header p:hover{
+    color: #aa7d4b;
+    transition: ease .5s;
+}
+
+.header ul{
+    margin: 0px;
+    padding: 5px 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+.header ul li{
+    display: inline;
+    list-style-type: none;
+    font-weight: 700;
+    font-family: 'ZonaPro';
+    font-size: 18px;
+}
+
+.header ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 15px 0 15px;
+    transition: ease .5s; 
+}
+
+.header ul li a:hover{
+    color: #aa7d4b;
+    transition: ease .5s;
+}
+
+.selectpicker1{
+    color: #fff !important;
+    border: none;
+    background: none;
+    font-weight: 700;
+    font-family: 'ZonaPro';
+    font-size: 18px;
+    cursor: pointer;
+    transition: ease .5s; 
+}
+
+.selectpicker1 option{
+    color:  #aa7d4b !important;
+}
+
+.selectpicker2{
+    color: #aa7d4b !important;
+    background: none;
+    font-family: 'ZonaPro';
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    margin-left: -3px;
+}
+
+/* RESPONSIVE HEADER  */
+@media (min-width:992px) and (max-width:1199px){
+    .header{
+        padding: 0px 50px;
+    }
+    .header p, .selectpicker1, .header ul li{
+        font-size: 16px;
+    }  
+}
+
+@media (min-width:767px) and (max-width:991px){
+    .header{
+        padding: 0px 50px;
+    }
+    .header p, .selectpicker1, .header ul li{
+        font-size: 16px;
+    }  
+}
+/* ------------------------------------------------ */
+
+/* NAVBAR  */
+.sitelogo{
+    width: 300px;
+    min-width: 300px;
+}
+
+.navbar {
+    background: url("img/thumbnail_BACKGROUND.png");
+    background-size: initial;
+    margin-top: 30px;
+    font-family: 'ZonaPro';
+    padding: 20px 100px;
+    border-bottom: 3px solid #d59a6e;
+}
+
+.navbar .nav-item .nav-link{
+    color: #aa7d4b;
+    margin-right: 10px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.navbar .nav-item .nav-link.active{
+    color: #aa7d4b !important;
+}
+
+.navbar .nav-item .nav-link.active::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #aa7d4b;
+}
+
+.navbar .nav-item .nav-link:hover, .navbar .nav-item .nav-link:visited{
+    color: #aa7d4b;
+}
+
+.navbar-toggler, .navbar-toggler:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler i{
+    color:#aa7d4b; 
+    font-size: 40px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #aa7d4b;
+}
+
+.rowUp{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    color: #745939;
+}
+
+.rowDown{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.loyalButton {
+    border-radius: 0;
+    border: 1px solid #ccb193;
+    padding: 10px 20px;
+    margin-right: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: #745939;
+    font-weight: 700;    
+    transition: ease 0.5s;
+}
+
+.loyalButton:hover {
+    background: #aa7d4b;
+    color: #fff;  
+    transition: ease 0.8s;
+}
+
+.bookButton{
+    border-radius: 0;
+    padding: 10px 20px;
+    background: #aa7d4b;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700; 
+    color: #fff; 
+    transition: ease 0.5s;
+}
+
+.bookButton:hover{
+    border: 1px solid #ccb193;
+    background: none;
+    color: #745939;
+    transition: ease 0.8s;
+}
+
+.cool-link2 {
+    display: inline-block;
+    text-decoration: none !important;
+}
+
+.cool-link2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #aa7d4b;
+    transition: width .8s ease;
+}
+
+.cool-link2:hover::after {
+    width: 100%;
+}
+
+/* RESPONSIVE NAVBAR */
+@media (max-width:1700px){
+    .sitelogo{
+        width: 180px;
+        min-width: 180px;
+    }
+    .navbar {
+        padding: 10px 40px;
+    }
+    .loyalButton {
+        font-size: 16px; 
+    }
+    .bookButton{
+        font-size: 16px;
+    }
+    .rowDown{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1199px) and (min-width:992px){
+    .sitelogo{
+        width: 150px !important;
+        min-width: 150px;
+    }
+    .rowDown{
+        font-size: 12px; 
+    }
+    .bookButton{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:991px) {
+    .navbar .nav-item .nav-link.active::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #aa7d4b;
+    }
+    .cool-link2:hover::after {
+        width: 0%;
+    }
+    
+}
+
+@media (max-width:991px) and (min-width:768px){
+    .navbar .nav-item .nav-link.active::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #aa7d4b;
+    }
+    .sitelogo{
+        width: 220px;
+        min-width: 220px;
+    }
+    .navbar {
+        padding: 10px 40px;
+    }
+    .rowDown{
+        font-size: 14px; 
+    }
+}
+
+@media (max-width:767px){
+    .sitelogo{
+        width: 200px;
+        min-width: 200px;
+    }
+    .navbar {
+        margin-top: 0;
+        padding: 10px 40px;
+    }
+    .navbar-toggler i{
+        font-size: 35px;
+    }
+}
+
+@media (max-width:480px){
+    .sitelogo{
+        width: 150px !important;
+        min-width: 150px;
+    }
+    .navbar-toggler i{
+        font-size: 28px;
+    }
+    .navbar {
+        padding: 10px 15px;
+    }
+    .rowDown{
+        font-size: 14px;
+    }
+    .bookButton{
+        font-size: 10px;
+    }
+    .navbar-collapse {
+        padding: 20px;
+    }
+}
+
+@media (max-width:320px){
+    .sitelogo{
+        width: 120px;
+        min-width: 120px;
+    }
+    .navbar {
+        padding: 10px 5px;
+    }
+    .navbar-collapse {
+        padding: 20px;
+    }
+    .navbar-toggler i{
+        font-size: 25px;
+    }
+}
+/* ------------------------------------------------ */
+
+
+/* CAROUSEL  */
+.mainCarousel{
+    clear: both;
+    min-height: 200px;
+    position: relative;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+    width: 100%;
+    height: 100%; 
+}
+
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+
+.full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.carousel-fade .carousel-item {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .75s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1; 
+}
+
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+    visibility: hidden; 
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+    visibility: visible; 
+}
+
+.contentOverSlider {
+    position: absolute;
+    z-index: 10;
+    color: white;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.contentOverSlider span {
+    font-family: 'ZonaPro';
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff; 
+}
+  
+.vcenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* RESPONSIVE CAROUSEL  */
+@media  (min-width:768px){
+    .mainCarousel{
+        clear: both;
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){ 
+    .contentOverSlider span {
+        font-size: 28px;          
+      }
+      .mainCarousel{
+        min-height: 600px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contentOverSlider span {
+        font-size: 25px;          
+    }
+    .mainCarousel{
+        min-height: 500px;
+        margin-top: 60px;
+    } 
+}
+  
+@media (max-width: 575px) {
+    .contentOverSlider {
+      display: none !important; 
+    } 
+    .mainCarousel{
+        min-height: 350px;
+        margin-top: 60px;
+    }      
+}
+
+@media (max-width:480px){   
+    .mainCarousel{
+        min-height: 300px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width:320px){
+    .mainCarousel{
+        margin-top: 60px;
+    }
+}
+/* ------------------------------------------------ */
+
+
+/* BOOKING  */
+.bookingForm {
+    padding: 30px 0px;
+    position: absolute;
+    z-index: 1000;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: url("img/thumbnail_BACKGROUND.png");
+    background-size: auto;
+} 
+
+.bookingForm form {
+    display: block;
+    margin: 0 auto; }
+
+.bookingForm .form-group {
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #aa7d4b; 
+}
+
+.bookingForm .form-group label {
+    padding: 5px 0 0 0;
+    margin-left: 20px;
+    font-weight: 700;
+    font-family: 'ZonaPro';
+}
+
+.bookingForm .form-group input, .bookingForm  .form-group select {
+    font-weight: 300;
+    color: #aa7d4b;
+    padding: 0 20px 0 20px;
+    margin: 0 0 10px 0;
+    height: 30px;
+    width: 100%;
+    border: 0;
+    background-color: transparent; 
+}
+
+.bookingForm form .form-group .form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.bookingForm button[type=submit] {
+    margin: 0;
+    padding: 28px 15px;
+    font-family: 'ZonaPro';
+    font-size: 14px;
+}
+
+/* RESPONSIVE BOOKINGFORM  */
+@media (max-width: 1199px){
+    .bookingForm .col-md-3 {
+        min-width: 25% !important;
+    }
+}
+
+@media (max-width:991px){
+    .bookingForm {
+       display: none;
+    }
+} 
+
+@media (max-width: 767px){
+    .bookingForm .row{
+        padding: 25px;
+    }
+    .bookingForm .form-group {
+        width: 100%;
+        height: 85%;
+        font-size: 16px;
+        border: 1px solid #aa7d4b; 
+    }
+    .bookingForm button[type=submit] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px){
+    .bookingForm .form-group {
+        width: 100%;
+        height: 75%;
+    }
+}
+/* --------------------------------------------- */
+
+
+/* WELCOME SPACE  */
+.welcomeSpace {
+    padding: 40px 0px 10px 0px;
+}
+
+/* RESPONSIVE WELCOME  */
+@media (max-width:767px){
+    .welcomeSpace {
+        padding: 0px 0px 10px 0px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:320px){
+    .welcomeSpace {
+        padding: 0px 0px 10px 0px;
+        margin-top: -20px;
+    }
+}
+/* ------------------------------------------------ */
+
+
+/* WHYBOOK  */
+.whyBook{
+    margin-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background: #745939;
+}
+
+.whyBook h2 {
+    color: #fff;
+    font-size: 91px;
+    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.whyBook p{
+    color: #fff;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-bottom: 1px solid #fff;
+    line-height: 30px;
+    height: 120px; 
+}
+
+/* RESPONSIVE WHYBOOK  */
+@media (max-width:1199px) and (min-width:992px){
+    .whyBookRow .col-md-3{
+        min-width: 50%;
+    }
+    .whyBook h2 {
+        font-size: 75px;
+    }
+    .whyBook p{
+        text-align: center;
+        font-size: 22px;
+        line-height: 20px;
+        height: 60px !important;
+    }  
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .whyBook p{
+        font-size: 18px;
+        height: 110px !important;
+    } 
+    .whyBook{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}  
+
+@media (max-width:767px){
+    .whyBookRow .col-md-3{
+        width: 50%;
+    }
+    .whyBook h2 {
+        font-size: 60px;
+    }
+    .whyBook p{
+        font-size: 20px;
+        text-align: center;
+        line-height: 30px;
+        height: 90px !important;
+    } 
+}
+
+@media (max-width:480px){
+    .whyBookRow .col-md-3{
+        width: 100%;
+    }
+    .whyBook h2 {
+        font-size: 50px;
+    }
+    .whyBook p{
+        font-size: 18px;
+        line-height: 20px;
+        height: 50px !important;
+    } 
+}
+
+@media (max-width:320px){
+    .whyBook p{
+        height: 60px !important;
+    }  
+}
+/* ------------------------------------------------ */
+
+/* STAY  */
+.stay {
+    margin-top: 30px;
+    margin-bottom: 90px;
+}
+
+/* RESPONSIVE STAY  */
+@media (max-width:575px){
+    .stay {
+        margin-bottom: 60px;
+    }
+}
+/* ------------------------------------------------ */
+
+/* ROOM TYPES  */
+.roomTypes{
+    margin: 50px 0;
+}
+
+.roomTypesBox{
+    position: relative;
+    background-color:  black;
+}
+
+.roomTypesBox img{
+    width: 100%;
+    min-height: 600px;
+    opacity: 1;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.roomTypesBox:hover img{
+    opacity: 0.7;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.roomTypesInfo{
+    position: absolute;
+    text-align: center;
+    padding: 0px 15px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.roomTypesInfo h3{
+    padding-top: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.roomTypesInfo p{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.roomTypesInfo p strong{
+    font-family: 'ZonaPro';
+    font-size: 28px;
+    color: #fff;
+}
+
+.roomTypesInfo a{ 
+    color: #fff;
+    font-weight: 700;
+    font-family: 'ZonaPro';
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px; 
+    transition: border 0.3s ease;
+}
+
+.cool-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none !important;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .8s ease;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+}
+
+/* RESPONSIVE ROOM TYPES  */
+@media (min-width:992px) and (max-width:1199px){
+    .roomTypesInfo p{
+        font-size: 24px;
+    }
+    .roomTypesInfo p strong{
+        font-size: 26px;
+    }
+    .roomTypesInfo a{ 
+        font-size: 18px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .roomTypesBox img{
+        width: 100%;
+        min-height: 450px;
+    }
+    .roomTypesInfo p{
+        font-size: 22px;
+    }
+    .roomTypesInfo p strong{
+        font-size: 24px;
+    }
+}
+
+@media (max-width:767px){
+    .roomTypesBox img{
+        min-height: 450px !important;
+    }
+    .roomTypesInfo p{
+        font-size: 20px;
+    }
+    .roomTypesInfo p strong{
+        font-size: 22px;
+    }
+    .roomTypesInfo a{ 
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px){
+    .roomTypesInfo p{
+        font-size: 18px;
+    }
+    .roomTypesInfo p strong{
+        font-size: 20px;
+    }
+}
+/* ------------------------------------------------ */
+
+/* GASTRONOMY  */
+.bars{
+    margin: 40px 0;
+}
+
+.barBox{
+    position: relative;
+    background-color:  black;
+}
+
+.barBox img{
+    min-width: 400px;
+    min-height: 800px;
+    opacity: 1;
+    transition: opacity 0.35s, transform 0.35s;
+}
+    
+.barBox:hover img{
+    opacity: 0.7;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.barInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.barInfo h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+}
+
+.barInfo span{
+    font-family: 'BrittanySignature';
+    font-weight: 400;
+    font-size: 32px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.bars .exploreMoreBtn{
+    position: absolute;
+    bottom: 20px; 
+}
+
+/* RESPONSIVE GASTRONOMY  */
+@media (min-width:992px) and (max-width:1199px){
+    .barBox img{
+        min-width: 300px;
+        min-height: 550px;
+    }
+}
+
+@media  (min-width:768px) and (max-width:991px){
+    .barBox img{
+        min-width: 300px;
+        min-height: 500px;
+    }   
+}
+
+@media (max-width:767px){
+    .barBox img{
+        min-width: 300px !important;
+        min-height: 500px !important;
+    }
+}
+
+@media (max-width:575px){
+    .barBox img{
+        min-width: 20px !important;
+        min-height: 100px !important;
+    }    
+}
+
+@media (max-width:480px){
+    .barInfo h3{
+        font-size: 25px !important;
+    } 
+    .barInfo span{
+        font-size: 25px !important;
+    } 
+}
+/* ------------------------------------------------ */
+
+/* DESTINATION  */
+.destination {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.destinationBox{
+    position: relative;
+    background-color: black;
+}
+
+.destinationBox img{
+    width: 100%;
+    min-height: 450px;
+    opacity: 1;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.destinationBox:hover img{
+    opacity: 0.7;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.destinationInfo{
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.destinationInfo h3{
+    padding-top: 32px;
+    font-family: 'ZonaPro';
+    font-weight: 700 !important;
+    font-size: 30px;
+    color: #fff;
+}
+
+.destinationInfo h3 span{
+    font-family: 'BrittanySignature';
+    font-weight: 400 !important; 
+    font-size: 30px;
+}
+
+.destinationInfo .exploreMoreBtn{
+    opacity: 1;
+    position: absolute;
+    bottom: 20px; 
+}
+/* ------------------------------------------------ */
+
+/* FOLLOWUS  */
+
+.followUs{
+    padding: 10px 0px;
+    overflow-x: hidden !important;
+}
+
+.followUsGallery .img-fluid{
+    cursor: pointer;
+    border: 10px solid #b58f6d;
+    opacity: 1;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.followUsGallery .img-fluid:hover{
+    opacity: 0.7;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.followUsInfo{
+    background: #b58f6d;
+}
+
+.followUsInfo p{
+    font-size: 80px;
+    text-align: left;
+    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+    line-height: 120px;
+    padding: 0px 10px;
+    margin: auto;
+}
+
+.followUsInfo p span{
+    font-size: 50px;
+    font-family: 'BrittanySignature';
+    font-weight: 400;
+}
+
+/* RESPONSIVE FOLLOWUS  */
+@media (max-width: 1199px) and (min-width:992px){
+    .followUsInfo p {
+        font-size: 50px;
+        line-height: 70px;
+        padding: 0px 10px !important;
+    }
+    .followUsInfo p span{
+        font-size: 40px;
+    }
+}
+
+@media (min-width:768px) and (max-width: 991px){
+    .followUsGallery .col-md-4{
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+    .followUsInfo p {
+        font-size: 40px;
+        line-height: 60px;
+        padding: 0px 10px !important;
+    }
+    .followUsInfo p span{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 767px){
+    .followUsGallery{
+        background: #b58f6d;
+    }
+    .followUsGallery .col-md-4{
+        width:50%;
+    }
+    .followUsGallery .img-fluid {
+        border: none;
+        height: 100%;
+        width: 100%;
+    }
+    .followUsInfo{
+        order: 1 !important;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .followUsGallery .row{
+        margin: 0px 0px 15px 0px !important;
+    }
+    .followUsGallery{
+        order: 2 !important;
+    }
+    .followUsInfo p {
+        font-size: 32px;
+        line-height: 50px;
+    }
+    .followUsInfo p span{
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 575px){
+    .followUsGallery .img-fluid {
+        border: none;
+        height: 95%; 
+        width: 100%;
+    }
+    .followUsGallery .col-md-4{
+        width: 100%;
+        padding: 0px 30px;
+    }
+    .followUsGallery .row{
+        margin-top: 0px !important;
+    }
+    .followUs h2 {
+        font-size: 30px;
+    }
+    .followUsInfo p {
+        font-size: 28px;
+        line-height: 50px;
+    }
+    .followUsInfo p span{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 320px){
+    .followUs h2 {
+        font-size: 22px;
+    }
+    .followUsInfo p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .followUsInfo p span{
+        font-size: 18px;
+    }
+}
+/* ------------------------------------------------ */
+
+/* DOWNMENU  */
+.downMenu{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background:  #b58f6d; 
+}
+
+.downMenu ul{
+    font-size: 14px;
+    margin: 0px;
+    padding: 10px 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+.downMenu ul li{
+    display: inline;
+    list-style-type: none;
+    font-weight: 700;
+    font-family: 'ZonaPro';
+    font-size: 20px;
+}
+
+.downMenu ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 10px 0 10px; 
+    transition: ease .5s; 
+}
+
+.downMenu ul li a:hover{
+    color: #aa7d4b;
+    transition: ease .5s;
+}
+
+/* RESPONSIVE DOWNMENU  */
+@media (max-width:1199px){
+    .downMenu ul{
+        display: flex;
+        justify-content: center;
+        line-height: 35px;
+        padding-left: 10px !important;
+    }
+    .offset-md-1{
+        margin-left: 0;
+    }
+}
+
+@media (max-width:768px){
+    .downMenu ul li{
+        font-size: 16px;
+    }
+}
+/* ------------------------------------------------ */
+
+/* CONTACT */
+.logo2{
+    width:200px; 
+}
+
+.contactContainer{
+    background: #745939;
+    padding: 80px 40px 30px 40px;
+}
+
+.form-inline{
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-inline button{
+    background: #aa7d4b;
+    border-radius: 0;
+    padding: 7px 15px;
+    color: #fff;
+    margin-bottom: 3px;
+}
+
+.form-inline button:hover{
+    color: #745939;
+    border: 1px solid #ccb193;
+    background: none;
+    transition: all 0.8s ease;
+}
+
+.newsletter .checkbox{
+    position: relative;
+    color: #fff;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.newsletter label{
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.newsletter input {
+    color: #313131;
+    border: 1px solid #d7d7d7;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    background: none;
+    border-radius: 0px;
+    margin-bottom: 3px;
+}
+
+.newsletter input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 2px solid #aa7d4b;
+    border-radius: 2px;
+}
+
+.newsletter ::placeholder { 
+    color: #fff !important;
+}
+
+.socialMedia {
+    text-align: center;
+}
+
+.socialMedia img{
+    padding: 10px;
+    color: #ffffff;
+}
+
+.socialMedia i:hover{
+    cursor: pointer;
+} 
+
+.visitAlso h4, .contactDetails h4 {
+    color: #aa7d4b;
+}
+
+.visitAlso .rowUpImg img{
+    padding: 30px;
+    height: 150px;
+    width: 150px;
+}
+
+.visitAlso .img-fluid{
+    cursor: pointer;
+}
+
+.contactDetails p{
+    color: #aa7d4b;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+}
+
+.contactDetails .footer{
+    color: #626262 !important;
+    font-size: 19px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+}
+
+.contactDetails a{
+    color: #aa7d4b;
+}
+
+.contactDetails .footer a{
+    color: #aa7d4b;
+} 
+
+/* RESPONSIVE CONTACT  */
+@media (max-width: 767px){
+    .contactContainer {
+        padding: 40px;
+    }
+    .contactinfo h4, .contactinfo p, .contactDetails .footer{
+        text-align: center !important;
+    }
+    .logo2{
+        width: 180px;
+    }
+}
+
+@media (max-width: 575px){
+    .socialMedia h4{
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 480px){
+    .contact h4{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 320px){
+    .contact h4{
+        font-size: 25px;
+    }
+    .logo2{
+        width: 150px;
+    }
+}
+
+@media (min-width: 344px) and (max-width: 513px){
+    .form-inline button {
+        margin-bottom: 18px !important;
+    }
+}
+/* ------------------------------------------------ */
+
+
+/* BACK TO TOP  */
+.back-to-top {
+    z-index: 10;
+    background: #aa7d4b;
+    border: 1px solid #aa7d4b;
+    color: #fff;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    transition: ease 0.5s;
+}
+
+.back-to-top:hover{
+   border: 1px solid #fff;
+   box-shadow: none !important;
+   transition: ease 0.5s;
+}
+/* ------------------------------------------------ */
+
+
+/* OWL CAROUSEL */
+.owl-dot {
+    margin-top: 10px;	
+}
+
+#owl-welcome .item img{
+    display: block;
+    width: 100%;
+    height: 35vh;
+}
+
+#owl-welcome .owl-dots {
+    position: relative;
+    bottom: 50px;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #fff;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+}
+
+.owl-dot.active span, .owl-dot:hover span {
+    background: #aa7d4b !important;
+}
+/* ------------------------------------------------ */
