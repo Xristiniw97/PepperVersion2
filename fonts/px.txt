@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'CaviarDreams';
+  src: url('../fonts/CaviarDreams.ttf')  format('truetype'),
+       url('../fonts/CaviarDreams_Bold.ttf'),
+       url('../fonts/CaviarDreams_BoldItalic.ttf'),
+       url('../fonts/CaviarDreams_Italic.ttf') ;
+}
